@@ -18,6 +18,6 @@ app.post('/', (req, res) => {
   req.on('end', () => res.end());
 });
 
-const server = app.listen(3333, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.info(`Express running → PORT ${server.address().port}`);
 });
