@@ -2,7 +2,7 @@
 An express web server demonstrating an HTTP POST endpoint that streams the length of a request body back in response
 
 ## Usage
-Deployed to https://express-stream-demo.onrender.com.
+Deployed to [Render.com](https://express-stream-demo.onrender.com/) and [Railway](https://express-stream-demo.up.railway.app/)
 1. warm up the service with GET request to https://express-stream-demo.onrender.com/
 2. Upload a small file (< 2MB) using Postman or curl similar to below (the `-N` arg is required to disable response buffering)
     ```
