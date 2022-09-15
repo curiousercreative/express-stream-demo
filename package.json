@@ -1,0 +1,15 @@
+{
+  "name": "streamdemo",
+  "version": "0.1.0",
+  "description": "An express web server demonstrating an HTTP POST endpoint that streams the length of a request body back in response",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
