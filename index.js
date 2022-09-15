@@ -4,6 +4,7 @@ const app = express();
 
 app.get('/', (req, res) => res.sendStatus(204));
 app.post('/', (req, res) => {
+  console.info('upload request begin');
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain; charset=utf-8');
 
@@ -15,7 +16,10 @@ app.post('/', (req, res) => {
     res.write(`\n${progress}`);
   });
 
-  req.on('end', () => res.end());
+  req.on('end', () => {
+    console.info(`upload request ended with size: ${progress}`);
+    res.end();
+  });
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
